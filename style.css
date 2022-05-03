@@ -1,0 +1,150 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+#chess
+{
+    display: block;
+    margin: 30px auto;
+    box-shadow:  -2px -2px 2px #EFEFEF,5px 5px 5px #b9b9b9 ;
+}
+body
+{
+    background: #fff;
+}
+ul
+{
+    list-style: none;
+    display: inline-block;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0;
+    margin-left: 650px;
+}
+ul li
+{
+    color: #666;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px;
+}
+#divider
+{
+    position: relative;
+    box-sizing: border-box;
+    border-bottom: 1px solid #999;
+    box-shadow:  -2px -2px 1px #b9b9b9,2px 2px 2px #b9b9b9 ;
+    height: 50px;
+    display: block;
+    width: 100%;
+    background: rgba(235,235,235,.8);
+}
+#divider:hover
+{
+    background: rgba(235,235,235,.4);
+}
+#header
+{
+    height: 200px;
+    display: block;
+    width: 100%;
+    background: #27ae60;
+    text-align: center;
+    font-size: 80px;
+}
+.content
+{
+    display: block;
+    padding: 50px 0;
+    line-height: 150px;
+    color: #fff;
+    letter-spacing: 18px;
+}
+p {
+    margin: 0;
+}
+
+.wrapper {
+    color: #eee;
+    position: absolute;
+    top:30px;
+    left: 130px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.wrapper a
+{
+    text-decoration: none;
+    color: #fff;
+
+}
+.text {
+    margin: 0;
+    font-size: 40px;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+.text .line {
+    overflow: hidden;
+    white-space: nowrap;
+    height: 50px;
+    line-height: .9;
+}
+.text .line:first-child + .line {
+    margin-left: 75px;
+}
+.text .line:first-child + .line + .line {
+    margin-left: 150px;
+}
+.text .line > p {
+    margin: 0;
+    height: 45px;
+    overflow: hidden;
+    font-size: 1em;
+    line-height: .9;
+    white-space: nowrap;
+    -webkit-animation: moveWords 6s infinite ease;
+    animation: moveWords 6s infinite ease;
+}
+.text .line:nth-child(odd) {
+    -webkit-transform: skew(0deg, 0deg) scaleY(0.66667);
+    transform: skew(0deg, 0deg) scaleY(0.66667);
+}
+.text .line:nth-child(even) {
+    -webkit-transform: skew(0deg, -30deg) scaleY(1.33333);
+    transform: skew(0deg, -30deg) scaleY(1.33333);
+}
+
+@-webkit-keyframes moveWords {
+    0% {
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+    }
+    50% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    100% {
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+    }
+}
+
+@keyframes moveWords {
+    0% {
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+    }
+    50% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    100% {
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+    }
+}
